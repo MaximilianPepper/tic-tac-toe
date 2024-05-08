@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+    --size: 150px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.gameboard {
+    height: calc(var(--size) * 3);
+    width: calc(var(--size) * 3);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.gameboard div {
+    height: var(--size);
+    width: var(--size);
+    border: 1px solid black;
+}
