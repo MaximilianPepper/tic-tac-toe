@@ -2,13 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Special Elite", system-ui, fallback Roboto;
+    font-weight: 400;
+    font-style: normal;
 
 }
 :root {
     --size: 150px;
 }
+.players {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+    width: calc(var(--size) * 3);
+    font-size: 30px;
+}
+.players p {
+    border-radius: 50%;
+}
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -24,4 +38,30 @@ body {
     height: var(--size);
     width: var(--size);
     border: 1px solid black;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.play {
+    display: none;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+}
+.play h1 {
+    color:red;
+}
+.play button {
+    height: 100px;
+    width: 200px;
+    margin-top: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+.play button:active{
+    background-color: grey;
 }
